@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+
+@media screen and (max-width:1320px){
+    .mail{
+        width:150px !important;
+    }
+    .pass, .rpass{
+        width:150px !important;
+    }
+        
+    *{
+        margin-left: 0;
+    }
+    body{
+        background: green !important;
+    }
+    .wrapper{
+        position:absolute;
+        left:15% !important;
+        width:70% !important;
+    }
+    .form-container >*{
+        width:170px !important;
+        margin-left: 7% !important;
+    }
+    .interests1{
+        flex-basis: 100% !important;
+    }
+    .interests2{
+        flex-basis: 100% !important;
+    }
+    .chk3{
+        display: none !important;
+    }
+    .paddr{
+        width: 150px !important;
+    }
+    .caddr{
+        width: 150px !important;
+    }
+
+    
+    
+    
+}
+
+@media screen and (max-width:1050px){
+.header >*{
+    flex:auto !important;
+}
+.contact{
+    display: none !important;
+}
+}
+
+@media screen and (max-width:600px){
+    .header >*{
+        display:none !important;   
+    }
+    .header{
+        background: white !important;
+        position:static!important;
+        z-index: 0 !important;
+        font-size: 15px !important;
+    }
+    body{
+       /* background-repeat:repeat !important;*/
+       margin:0 !important;
+    }
+    .wrapper{
+        flex-direction: row !important;
+        width:700px !important;
+        position:absolute !important;
+        left:0 !important;
+        top:0 !important;
+
+    }
+    .name1,.name2,.name3,.rpass,.pass,.mail{
+        flex:100% !important;
+        width:200px !important;
+        margin:0 !important;
+        margin-left:10%!important;
+    }
+    .form-container{
+        height:1300px !important;
+    }
+    
+    .form-container > *{
+        width:200px !important;
+        flex:100% !important;
+        margin-bottom:1px !important;
+        
+        margin-right:0 !important;
+    }
+    .mail{
+        width:170px !important;
+        margin-left:20%!important;
+    }
+    .name1{
+        width:250px !important;
+        margin-left:20%!important;
+    }
+    .name2{
+        width:200px !important;
+        margin-left:20%!important;
+    }
+    .name3{
+        width:250px !important;
+        margin-left:20%!important;
+    }
+    h2{
+       /* margin:0 !important;
+        padding:0 !important;
+        padding-left: 100px !important;*/
+        position:absolute;
+        left:-60px;
+        top:-25px;
+        margin-bottom: 5px !important;
+        
+    }
+    .pass{
+        width:150px !important;
+        margin-left:20%!important;
+    }
+    .rpass{
+        width:150px !important;
+        margin-left:20%!important;
+    }
+    .paddr{
+        width:150px !important;
+        margin-left:20%!important;
+        
+    } 
+    .caddr{
+        width:150px !important;
+        margin-left:20%!important;
+    }
+    .sub{
+        width: 200px !important;
+        margin-left:20%!important;
+    }
+    .birth,.interests1,.interests2{
+        width: 200px !important;
+        margin-left:20%!important;
+        font-size: 18px  !important ;
+    
+    }
+    
+    .gender{
+        margin-left:19% !important;
+        font-size: 18px !important;
+    }
+    .chk3{
+        display:none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*Desktop syle*/
+
+body{
+    margin:0;
+    padding: 0;
+    /*background-image:url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;*/
+
+    color:white;
+    background-color:white;
+}
+
+.header{
+    display:flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:100px;
+    background: #2e2e2e;
+    height:56px; 
+    position:fixed;
+    right:0;
+    left:0;
+    z-index:1; 
+}
+.logo img{
+    width:50px;
+    height: 50px;
+    flex-shrink: 0;   
+}
+.navbar{
+    flex:1 60%;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+}
+.navbar a{
+    color:white;
+  
+    text-decoration: none;
+    font-size: 22px;
+    margin:0 1em;
+}
+.contact{
+    flex:1 20%;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    /*flex-wrap: wrap;*/
+
+}
+.contact-btn{
+    margin:0 5px;
+    flex:50%;
+    height: 30px;
+    border:none;
+    border-radius: 7px;
+    outline: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family:"Inconsolata",monospace;
+}
+.contact-btn:hover{
+    background: #2e2e2e;
+    border:1px white solid;
+    color:white;
+    font-family:"Inconsolata",monospace;
+
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    position:absolute;
+    left:30%;
+    top:24%;
+    width:40%;
+    /*max-height:100vh;*/
+    color:black;
+    
+   
+    background-color:white;
+}
+.form-container{
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    height:670px;
+    /*justify-content: space-around;*/
+    
+       
+
+}
+.wrapper>h2{
+    font-family: 'Open Sans', sans-serif;
+    padding-left:40%;
+
+}
+.form-container >*{
+    margin :5px 5px;
+    color:black;
+    outline:none;
+    margin-bottom:20px;
+    padding-left:2%;
+}
+
+
+.name-inp,.pass,.rpass{
+   /* width:70%;
+    height:30px;
+    padding:2px;
+    font-size: 13px;*/
+    border-radius: 4px;
+    border:1px solid rgb(17,67,107);
+    height:30px;
+    padding-left: 5%;
+    
+    
+}
+.pass,.rpass{
+    height:30px;
+    flex:50%;
+
+}
+
+.gender{
+    flex:100%;
+}
+.mail{
+    flex:100%;
+    width:490px;
+    margin-left:1.5%;
+    padding-left:2%;
+}
+.dob{
+    flex:100%;
+}
+.submit{
+    flex:100%;
+}
+.name1,.name2,.name3{
+    max-width:150px;
+}
+.name1{
+    margin-left:4%;
+}
+.name2{
+    margin-left:2%;
+}
+.pass,.rpass{
+    width:230px;
+    margin-left:4%;
+}
+.gen{
+    margin-left: 2%;;
+}
+.gender ,.birth,.interests1{
+    margin-left:1.5%;
+    font-size:20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.interests1{
+    margin-left:4%;
+    font-size:17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.interests2{
+    margin-left:21%;
+    font-size:17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.paddr,.caddr{
+    width:230px;
+    margin-left:4%;
+}
+.birth{
+    margin-left:3%;
+}
+.dob{
+    width:150px;
+    margin-left:10px;
+}
+.sub{
+    width:90%;
+    margin:15px 0 0 9px;
+    font-size:20px;
+    height:40px;
+    background-color: #5591ec;
+    border:1px solid #5591ec;
+    color:#fff;
+    text-align: center;
+
+    border-radius: 10px;
+    font-weight: 500;
+}
